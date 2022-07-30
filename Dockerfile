@@ -29,7 +29,7 @@ RUN pip3 install sklearn
 RUN pip3 install pyspark
 RUN pip3 install findspark
 
-#RUN mkdir /predict
+RUN mkdir /predict
 ENV PROG_DIR /winepredict
 COPY test.py /winepredict/
 COPY ValidationDataset.csv /winepredict/
